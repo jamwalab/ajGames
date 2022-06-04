@@ -1,8 +1,11 @@
 import React from "react";
 
+import {CellStyle} from "./styles/CellStyles";
+import {TetrominosShapes} from "../../utils/Tetris/tetrominos";
+
 const Cell = ({type}) => {
   return (
-    <div>cell</div>
+    <CellStyle type={type} color={TetrominosShapes[type].color}>cell</CellStyle>
   );
 }
 

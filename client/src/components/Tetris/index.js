@@ -4,23 +4,22 @@ import Button from "./Button";
 import Playground from "./Playground";
 import Cell from "./Cell";
 import Information from "./Information";
-import { Typography } from "@mui/material";
 
 import { createPlayground } from '../../utils/Tetris/helper';
 
 const Tetris = () => {
   return (
-    <Typography>
+    <div>
       <Playground gameArea = {createPlayground()}/>
-      <Typography>
-        <Typography>
+      <div>
+        <div>
           <Information/>
           <Information/>
           <Information/>
-        </Typography>
+        </div>
         <Button/>
-      </Typography>
-    </Typography>
+      </div>
+    </div>
   )
 }
 
